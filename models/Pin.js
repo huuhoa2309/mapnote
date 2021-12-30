@@ -10,7 +10,7 @@ const PinSchema = new mongoose.Schema({
         required: true,
         min: 3,
     },
-    des: {
+    desc: {
         type: String,
         required: true,
         min: 3
@@ -33,4 +33,4 @@ const PinSchema = new mongoose.Schema({
 }, { timestamps: true });
 
 
-module.exports = mongoose.model('User', PinSchema);
+module.exports = mongoose.model('Pin', PinSchema);
